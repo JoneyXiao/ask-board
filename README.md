@@ -1,6 +1,6 @@
 # 提问墙（ask-board）
 
-AI Spark Meetup 现场提问墙的数据层：Supabase 表结构、RLS、Realtime 与 RPC。前端页面和 GitHub Pages 不在本层范围。
+AI Spark Meetup 现场提问墙。本 README 先覆盖数据层：Supabase 表结构、RLS、Realtime 与 RPC。前端静态导出与 GitHub Pages 发布见 [`docs/PAGES.md`](docs/PAGES.md)。
 
 数据契约见 [`docs/DEV_PLAN.md`](docs/DEV_PLAN.md)。改契约须先改该文件，并告知协调者 askboard。
 
@@ -48,3 +48,7 @@ where id = true;
 ## 分支
 
 开发只在 `dev` / `feat/*` 进行。本地验收通过前，不要合并或直推 `main`。
+
+## 发布（GitHub Pages）
+
+静态站点发布到 [https://joneyxiao.github.io/ask-board/](https://joneyxiao.github.io/ask-board/)。工作流在 `dev` / `feat/*` 上只做 build 检查；正式部署仅在验收后合入 `main` 才触发。细节见 [`docs/PAGES.md`](docs/PAGES.md)。
