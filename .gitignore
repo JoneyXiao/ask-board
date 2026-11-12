@@ -1,0 +1,17 @@
+# secrets and local env — never commit real keys
+.env
+.env.*
+!.env.example
+
+# node / next (frontend will use these later)
+node_modules/
+.next/
+out/
+dist/
+
+# supabase local
+supabase/.temp/
+supabase/.branches/
+
+.DS_Store
+*.log
