@@ -3,11 +3,12 @@
 .env.*
 !.env.example
 
-# node / next (frontend will use these later)
+# node / next
 node_modules/
 .next/
 out/
 dist/
+*.tsbuildinfo
 
 # supabase local
 supabase/.temp/
